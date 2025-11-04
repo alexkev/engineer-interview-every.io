@@ -7,7 +7,7 @@ export function ChallengeComponent() {
   const columnNames = getColumnNames();
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-6 h-full">
+    <div className="w-full max-w-6xl p-6 h-full">
       <h1 className="text-3xl font-bold text-left mb-8 text-gray-800">
         Todo Board
       </h1>

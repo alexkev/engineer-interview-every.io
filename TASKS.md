@@ -65,7 +65,7 @@
 ### 7. Component Structure
 - [ ] Create store file: `src/store/boardStore.ts`
 - [ ] Create components:
-  - [ ] `src/components/Board.tsx` - Main board container
+  - [ ] `src/components/ChallengeComponent.tsx` - Main board container
   - [ ] `src/components/Column.tsx` - Individual column component
   - [ ] `src/components/TaskItem.tsx` - Individual task component
   - [ ] `src/components/AddTaskForm.tsx` - Form for adding new tasks
