@@ -27,7 +27,7 @@ export function AddTaskForm() {
   return (
     <Card className="max-w-md">
       <CardHeader className="pb-4">
-        <CardTitle className="text-lg font-semibold text-center text-card-foreground">
+        <CardTitle className="text-lg font-semibold text-left text-card-foreground">
           Add New Task
         </CardTitle>
       </CardHeader>
