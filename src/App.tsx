@@ -20,7 +20,7 @@ function App() {
           </div>
         </div>
       </header>
-      <main className="w-full max-w-[calc(100vw-50px)] mx-auto bg-gray-50 border border-black shadow-lg rounded-[40px] mt-4">
+      <main className="max-w-[calc(100vw-50px)] h-full mx-auto m-8 bg-gray-50 border rounded-lg shadow-lg">
         <ChallengeComponent />
       </main>
     </div>
