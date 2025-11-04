@@ -36,7 +36,7 @@ export function ChallengeComponent() {
 
   return (
     <div className="w-full max-w-6xl p-6 h-full">
-      <h1 className="text-3xl font-bold text-left mb-8 text-gray-800">
+      <h1 className="text-3xl font-bold text-left mb-8 text-foreground">
         Todo Board
       </h1>
       
@@ -45,11 +45,11 @@ export function ChallengeComponent() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
           {board.map((tasks, columnIndex) => (
             <Column
-            key={columnIndex}
-            columnIndex={columnIndex}
-            title={columnNames[columnIndex]}
-            tasks={tasks}
-            />
+              key={columnIndex}
+              columnIndex={columnIndex}
+              title={columnNames[columnIndex]}
+              tasks={tasks}
+              />
           ))}
         </div>
       </DragDropContext>

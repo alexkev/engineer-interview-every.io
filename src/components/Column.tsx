@@ -11,11 +11,11 @@ interface ColumnProps {
 
 export function Column({ columnIndex, title, tasks }: ColumnProps) {
   return (
-    <Card className="h-fit min-h-[400px]">
+    <Card className="h-fit min-h-[600px]">
       <CardHeader className="pb-2">
-        <CardTitle className="text-lg font-semibold text-center">
+        <CardTitle className="text-lg font-semibold text-center text-card-foreground">
           {title}
-          <span className="ml-2 text-sm font-normal text-gray-500">
+          <span className="ml-2 text-sm font-normal text-muted-foreground">
             ({tasks.length})
           </span>
         </CardTitle>
@@ -23,12 +23,12 @@ export function Column({ columnIndex, title, tasks }: ColumnProps) {
       <Droppable droppableId={columnIndex.toString()}>
         {(provided, snapshot) => (
           <CardContent 
-            className={`space-y-3 pt-4 ${snapshot.isDraggingOver ? 'bg-blue-50' : ''}`}
+            className={`space-y-3 pt-4 ${snapshot.isDraggingOver ? 'bg-accent/10' : ''}`}
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
             {tasks.length === 0 ? (
-              <div className="text-center py-8 text-gray-500 text-sm">
+              <div className="text-center py-8 text-muted-foreground text-sm">
                 No tasks yet
               </div>
             ) : (
