@@ -7,7 +7,7 @@ function App() {
       <div className="min-h-screen">
         <header className="bg-card text-primary-foreground p-6">
           <div className="flex items-center ml-6">
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-2xl font-bold text-foreground">
               Welcome To The Every.io Code Challenge.
             </h1>
             <div className="ml-12">

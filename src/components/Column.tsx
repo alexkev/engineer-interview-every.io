@@ -11,7 +11,7 @@ interface ColumnProps {
 
 export function Column({ columnIndex, title, tasks }: ColumnProps) {
   return (
-    <Card className="h-fit min-h-[600px]">
+    <Card className="h-fit min-h-[600px] max-w-[450px] w-full flex flex-col">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-semibold text-center text-card-foreground">
           {title}
